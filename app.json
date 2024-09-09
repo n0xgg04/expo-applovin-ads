@@ -1,0 +1,20 @@
+{
+  "expo": {
+    "name": "expo-applovin-ads",
+    "slug": "expo-applovin-ads",
+    "version": "0.1.0",
+    "description": "Applovin for Expo",
+    "sdkVersion": "50.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "android": {
+      "package": "com.n0xgg04.expoapplovinads"
+    },
+    "ios": {
+      "bundleIdentifier": "com.n0xgg04.expoapplovinads"
+    }
+  }
+}

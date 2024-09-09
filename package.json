@@ -1,0 +1,49 @@
+{
+  "name": "expo-applovin-ads",
+  "version": "0.1.1",
+  "description": "Applovin for Expo",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "build": "expo-module build",
+    "clean": "expo-module clean",
+    "lint": "expo-module lint",
+    "test": "expo-module test",
+    "prepare": "expo-module prepare",
+    "prepublishOnly": "expo-module prepublishOnly",
+    "expo-module": "expo-module",
+    "open:ios": "xed example/ios",
+    "open:android": "open -a \"Android Studio\" example/android",
+    "android": "expo run:android",
+    "ios": "expo run:ios"
+  },
+  "keywords": [
+    "react-native",
+    "expo",
+    "expo-applovin-ads",
+    "ExpoApplovinAds"
+  ],
+  "repository": "https://github.com/n0xgg04/expo-applovin-ads",
+  "bugs": {
+    "url": "https://github.com/n0xgg04/expo-applovin-ads/issues"
+  },
+  "author": "n0xgg04 <dulieu.vblc@gmail.com> (https://github.com/n0xgg04)",
+  "license": "MIT",
+  "homepage": "https://github.com/n0xgg04/expo-applovin-ads#readme",
+  "dependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*",
+    "react-native-applovin-max": "^6.2.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "expo-module-scripts": "^3.5.2",
+    "expo-modules-core": "^1.12.20"
+  },
+  "peerDependencies": {
+    "expo": "*",
+    "react": "*",
+    "react-native": "*"
+  }
+}

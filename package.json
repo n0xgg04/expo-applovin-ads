@@ -1,6 +1,6 @@
 {
   "name": "expo-applovin-ads",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "description": "Applovin for Expo",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -31,7 +31,7 @@
   "license": "MIT",
   "homepage": "https://github.com/n0xgg04/expo-applovin-ads#readme",
   "dependencies": {
-    "expo": "*",
+    "expo": "^51.0.32",
     "react": "*",
     "react-native": "*",
     "react-native-applovin-max": "^6.2.3"
@@ -42,7 +42,6 @@
     "expo-modules-core": "^1.12.20"
   },
   "peerDependencies": {
-    "expo": "*",
     "react": "*",
     "react-native": "*"
   }

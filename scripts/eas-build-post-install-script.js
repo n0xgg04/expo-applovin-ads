@@ -1,7 +1,9 @@
 /* eslint-disable no-inner-declarations */
 const path = require("path");
 const fs = require("fs");
+const { exec } = require("child_process");
 
+const dir = path.join(__dirname, "../");
 if (process.platform !== "darwin")
   console.log(
     "eas-build-post-install-script: no MAC",
@@ -16,20 +18,19 @@ else {
   const scriptFileName = "AppLovinQualityServiceSetup-ios.rb";
 
   // We copy the file to the project root
-  const newPath = path.join(process.cwd(), scriptFileName);
-  fs.copyFileSync(
-    path.join(process.cwd(), sourcePath, scriptFileName),
-    newPath,
-  );
+  const newPath = path.join(process.cwd(), "ios", scriptFileName);
+  fs.copyFileSync(path.join(dir, sourcePath, scriptFileName), newPath);
 
   const exec = require("child_process").exec;
 
-  const child = exec(`ruby ./${scriptFileName}`);
+  const child = exec(`ruby ${newPath}`);
 
   child.stdout.pipe(process.stdout);
+  child.stderr.pipe(process.stderr);
 
-  function callback() {
-    fs.unlinkSync(newPath); // We delete it at the end (unnecessary)
+  function callback(e) {
+    fs.unlinkSync(newPath);
+    console.log("EXIT", e);
     process.exit();
   }
 

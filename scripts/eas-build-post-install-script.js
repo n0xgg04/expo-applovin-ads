@@ -11,7 +11,7 @@ if (process.platform !== "darwin")
 else {
   console.log("RUNNING eas-build-post-install-script!");
 
-  const sourcePath = "./plugin";
+  const sourcePath = "./plugin/src";
 
   const scriptFileName = "AppLovinQualityServiceSetup-ios.rb";
 

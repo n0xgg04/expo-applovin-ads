@@ -1,6 +1,6 @@
 {
   "name": "expo-applovin-ads",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "Applovin for Expo",
   "main": "build/index.js",
   "types": "build/index.d.ts",

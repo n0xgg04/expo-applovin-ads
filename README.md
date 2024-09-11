@@ -19,7 +19,7 @@ Add to your ``app.json``:
     [
         "expo-applovin-ads/expo",
         {
-          "apiKey": "YOUR_API_KEY_HERE"
+          "apiKey": "YOUR_SDK_KEY_HERE"
         }
     ]
 ]

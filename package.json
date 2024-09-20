@@ -1,6 +1,6 @@
 {
   "name": "expo-applovin-ads",
-  "version": "0.1.6",
+  "version": "0.2.1",
   "description": "Applovin for Expo",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -21,7 +21,12 @@
     "react-native",
     "expo",
     "expo-applovin-ads",
-    "ExpoApplovinAds"
+    "ExpoApplovinAds",
+    "applovin",
+    "expo-plugins",
+    "admob",
+    "google-admob",
+    "react-native-ads"
   ],
   "repository": "https://github.com/n0xgg04/expo-applovin-ads",
   "bugs": {
@@ -31,10 +36,7 @@
   "license": "MIT",
   "homepage": "https://github.com/n0xgg04/expo-applovin-ads#readme",
   "dependencies": {
-    "expo": "^51.0.32",
-    "react": "*",
-    "react-native": "*",
-    "react-native-applovin-max": "^6.2.3"
+    "expo": "^51.0.32"
   },
   "devDependencies": {
     "@types/react": "^18.0.25",

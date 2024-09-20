@@ -1,6 +1,6 @@
 // update app level build.gradle file (module:app)
 
-const { withAppBuildGradle } = require('@expo/config-plugins');
+const { withAppBuildGradle } = require("@expo/config-plugins");
 
 module.exports = function withApplovinGradle(config, data) {
   return withAppBuildGradle(config, (config) => {
@@ -18,7 +18,14 @@ function addAppLovinApiKey(gradle, apiKey) {
     gradle.contents += appLovinPlugin;
   }
 
-  gradle.contents = gradle.contents.replace(appLovinPattern, '');
+  gradle.contents = gradle.contents.replace(appLovinPattern, "");
+
+  gradle.contents = gradle.contents.replace(
+    /(dependencies {[\w\W]+?)(?<=\n)}/,
+    `$1
+    implementation 'com.applovin:applovin-sdk:+'
+}`,
+  );
 
   gradle.contents = gradle.contents.replace(
     appLovinPlugin,
